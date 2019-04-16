@@ -1,0 +1,267 @@
+.justify-center {
+    justify-content: center;
+}
+
+.align-items {
+    align-items: center;
+}
+
+.align-stretch {
+    align-items: inherit;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-1 {
+    flex: 1;
+}
+
+.grow-0 {
+    flex-grow: 0 !important;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.row {
+    flex-direction: row;
+}
+
+.theme-section {
+    background-color: #f5f5f5;
+}
+
+.large {
+    font-size: 65px !important;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.row-res {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+}
+
+.front-img {
+    height: 600;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.v-overlay:before {
+    background-color: transparent !important;
+}
+
+.v-footer {
+    height: auto;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.v-overlay--active:before {
+opacity: 0 !important;
+}
+
+// .w5, .w10...
+@for $i from 1 through 100 {
+    .w#{$i * 1} {
+      width: $i * 1%
+    }
+}
+
+// .p5, .p10...
+@for $i from 1 through 100 {
+    .p#{$i} {
+      padding: $i * 1px
+    }
+}
+
+// .p5-top, .p10-top...
+@for $i from 1 through 100 {
+    .p#{$i}-top {
+      padding-top: $i * 1px !important
+    }
+}
+
+// .p5-bot, .p10-bot...
+@for $i from 1 through 100 {
+    .p#{$i}-bot {
+      padding-bottom: $i * 1px
+    }
+}
+
+@for $i from 1 through 100 {
+    .p#{$i}-side {
+      padding-left: $i * 1px;
+      padding-right: $i * 1px;
+    }
+}
+// margin .m10-top
+@for $i from 1 through 100 {
+    .m#{$i}-top {
+      margin-top: $i * 1px
+    }
+}
+
+@for $i from 1 through 100 {
+    .m#{$i}-bot {
+      margin-bottom: $i * 1px
+    }
+}
+
+@for $i from 1 through 100 {
+    .wh#{$i} {
+      width: $i * 1px;
+      height: $i * 1px;
+    }
+}
+
+@for $i from 1 through 100 {
+    .m#{$i} {
+      margin: $i * 1px !important
+    }
+}
+
+@for $i from 1 through 100 {
+    .fs#{$i} {
+      font-size: $i * 0.1rem
+    }
+}
+
+@for $i from 1 through 100 {
+    .h#{$i} {
+      height: $i * 1vh !important
+    }
+}
+
+
+
+@media screen and (min-width: 64rem) {
+.jumbo {
+    font-size: 4rem !important;
+    font-weight: bold;
+    line-height: 0.8 !important;
+}
+
+.subheading {
+    font-size: 1.5rem !important;
+  }
+
+.headline {
+    font-size: 2rem !important;
+    font-weight: 800 !important;
+}
+
+.texture {
+    font-size: 1.4rem !important;
+}
+
+.about-headline {
+    font-size: 1.4rem !important;
+    font-weight: normal !important;
+}
+
+.menu-btn {
+    height: 50px !important;
+}
+
+}
+
+.v-carousel__controls__item {
+    width: 20px !important;
+    height: 20px !important;
+  }
+  
+span {
+color: #64b5f6!important;
+font-size: 4.5rem;
+font-weight: 900;
+}
+
+@media only screen and (min-width: 1904px) {
+    .container {
+        max-width: 1285px;
+    }
+}
+
+
+@media screen and (min-width: 1200px) {
+    .v-carousel {
+        min-width: 400px;
+    }
+}
+
+@media (max-width: 1300px) {
+    .jumbo {
+        font-size: calc(25px + 2.7vw) !important;
+        font-weight: bold;
+        line-height: 0.8 !important;
+    }
+    
+    .subheading {
+        font-size: calc(12px + .4vw) !important;
+      }
+    
+    .headline {
+        font-size: calc(20px + 1.4vw) !important;
+        font-weight: 800 !important;
+    }
+
+    span {
+        font-size: 3.1rem;
+    }
+
+    .v-btn {
+        font-size: calc(12px + .2vw) !important;
+    }
+
+    .v-carousel__controls__item {
+        width: 15px !important;
+        height: 15px !important;
+    }
+    
+    .texture {
+        font-size: calc(12px + .4vw) !important;
+    }
+    
+    .about-headline {
+        font-size: calc(12px + .4vw) !important;
+        font-weight: normal !important;
+    }
+    
+  }
+
+
+@media screen and (min-width: 960px) {
+    .my-parallax {
+        height: 750px !important;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .row-res {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+      }
+    
+    .front-img {
+        width: 100% !important;
+        height: 100% !important;
+    }
+
+    .mob-order :nth-child(1) { order: 2; }
+    .mob-order :nth-child(2) { order: 1; }
+}
